@@ -12,7 +12,7 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/kr/pretty"
+	"github.com/marusama/d/pretty"
 )
 
 var colorizeEnabled = true

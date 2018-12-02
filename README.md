@@ -1,7 +1,7 @@
 # d
-[![Build Status](https://travis-ci.org/soider/d.svg?branch=develop)](https://travis-ci.org/soider/d)
-[![GoDoc](https://godoc.org/github.com/soider/d?status.svg)](https://godoc.org/github.com/soider/d)
-[![Go Report Card](https://goreportcard.com/badge/github.com/soider/d)](https://goreportcard.com/report/github.com/soider/d)
+[![Build Status](https://travis-ci.org/marusama/d.svg?branch=develop)](https://travis-ci.org/marusama/d)
+[![GoDoc](https://godoc.org/github.com/marusama/d?status.svg)](https://godoc.org/github.com/marusama/d)
+[![Go Report Card](https://goreportcard.com/badge/github.com/marusama/d)](https://goreportcard.com/report/github.com/marusama/d)
 
 d is a better way to do print statement debugging.
 
@@ -17,7 +17,6 @@ Type `d.D` instead of `fmt.Printf` and your variables will be printed like this:
 * Pretty colors!
 
 d is fork of https://github.com/y0ssar1an/q with some differences:
-* Added glide support
 * Do not include vendor into repository
 * Changed default behaviour - for me is more comfortable to log on stdout or have possibility to change file
 * Settings for removing colors
@@ -26,31 +25,31 @@ d is fork of https://github.com/y0ssar1an/q with some differences:
 ## Basic Usage
 
 ```go
-import "github.com/soider/d"
+import "github.com/marusama/d"
 ...
 d.D(a, b, c)
 
 // Alternatively, use the . import and you can omit the package name.
-// q only exports the Q function.
-import . "github.com/soider/d"
+// d only exports the D function.
+import . "github.com/marusama/d"
 ...
-Q(a, b, c)
+D(a, b, c)
 ```
 
 
-For best results, dedicate a terminal to tailing `$TMPDIR/q` while you work.
+For best results, dedicate a terminal to tailing `$TMPDIR/d` while you work.
 
 ## Install
 
 ```sh
-go get -u github.com/soider/d
+go get -u github.com/marusama/d
 ```
 
 ## Editor Integration
 
 #### Sublime Text
 ```
-cp $GOPATH/src/github.com/soider/d/dd.sublime-snippet Packages/User/dd.sublime-snippet
+cp $GOPATH/src/github.com/marusama/d/dd.sublime-snippet Packages/User/dd.sublime-snippet
 ```
 
 #### Atom

@@ -6,7 +6,7 @@ fmt.Printf("%#v", whatever). The output will be colorized and nicely formatted.
 The output goes to stdout or $OUT env var if defined.
 
 d exports a single D() function. This is how you use it:
-    import "github.com/soider/d"
+    import "github.com/marusama/d"
     ...
     d.D(a, b, c)
 */

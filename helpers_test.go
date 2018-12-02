@@ -5,7 +5,7 @@ import (
 	"go/ast"
 	"testing"
 
-	"github.com/kr/pretty"
+	"github.com/marusama/d/pretty"
 )
 
 // TestExtractingArgsFromSourceText verifies that exprToString() and argName()
@@ -363,8 +363,8 @@ func TestExtractingArgsFromSourceText(t *testing.T) {
 // in the sample text, argNames() should return []string{"a", "b", "c"}.
 func TestArgNames(t *testing.T) {
 	const filename = "testdata/sample1.go"
-	want := []string{"a", "b", "c", "d_", "e", "f", "g"}
-	got, err := argNames(filename, 14)
+	want := []string{"a", "b", "c", "d_", "e", "f", "g", "h", "i"}
+	got, err := argNames(filename, 20)
 	if err != nil {
 		t.Fatalf("argNames: failed to parse %q: %v", filename, err)
 	}
